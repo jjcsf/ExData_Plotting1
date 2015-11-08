@@ -1,4 +1,4 @@
-dt<-read.delim("household_power_consumption.txt", sep=";")
+dt<-read.delim("household_power_consumption.txt", sep=";",na.strings = "?")
 dt<-dt[dt$Date %in% c('1/2/2007','2/2/2007'),]
 
 png(file="plot2.png",width = 480, height = 480)
